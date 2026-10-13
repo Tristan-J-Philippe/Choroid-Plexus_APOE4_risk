@@ -1,0 +1,25 @@
+# APOE ε4 promotes non-cell-autonomous epithelial dysfunction at the choroid plexus
+
+#Complete snRNA-seq (RNA), snATAC-seq (ATAC), and spatial transcriptomics (ST) analysis pipelines.<br />
+<br />
+util.R suffix include required functions, RNA, ATAC, and ST suffixes indicate dataset.<br />
+<br />
+000 Installation and version control
+<br />
+010 Load_preprocess_util.R - Load, preprocess, and QC individual snRNA/ATAC-seq data samples (split by batch and lanes).
+011 Load_preprocess_SN_RNA_ATAC.R
+<br />
+020 Cell_type_annotation_util.R - Cell type annotation and cleaning of each dataset.
+021 Cell_type_annotation_ExVivo.R
+022 Cell_type_annotation_Tsai.R
+023 Cell_type_annotation_Jackson co-cultured.R
+024 Cell_type_annotation_Jackson non co-cultured.R
+025 Cell_type_proportion_ExVivo.R
+026 Cell_type_proportion_invitro.R - Example based on Tsai line Jackson line has fewer subtypes.
+<br />
+030 limma_pattern_fgsea_util.R - limma-Voom analyses, fgsea GO term analyses, GSVA, and pattern matching analyses.
+031 Cell_type_annotation_differential_ExVivo.R
+032 Cell_type_annotation_differential_invitro.R - Example based on Tsai line Jackson line has fewer subtypes.
+033 Differential_RNA_ExVivo.R
+034 Differential_RNA_InVitro.R - Example based on Tsai line Jackson line has fewer subtypes.
+036 Differential_protein_InVitro_CSF.R
